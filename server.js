@@ -24,7 +24,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.send(dataBase.users);
+  res.send("Hello Heroku");
 });
 
 app.post("/signin", signIn.handleSignIn(db, bcrypt));
